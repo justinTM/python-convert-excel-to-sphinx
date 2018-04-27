@@ -1,0 +1,2 @@
+
+@echo on && echo Running python script && cd "C:\Users\gt484e\Documents\Python Scripts" && python hello_world.py && cd C:\Users\gt484e\Documents\Sphinx && echo Moving all rst files to Sphinx directory && copy /Y "C:\Users\gt484e\Documents\Python Scripts\*.rst" C:\Users\gt484e\Documents\Sphinx && cd C:\Users\gt484e\Documents\Sphinx && echo Building Sphinx documentation from rsts && make html && cd "C:\Users\gt484e\Documents\Python Scripts"
