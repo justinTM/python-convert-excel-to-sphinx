@@ -1,0 +1,30 @@
+:orphan:
+
+=========================================
+*example_sheet1* data tags
+=========================================
+
+This sheet is an example for documenting how the conversion process works.
+
+
+.. csv-table::
+  :header: {headers}
+
+  {csv_table}
+
+{loop_start}
+
+{Data Tag}
+---------------------------------------------------------------------------
+  {Description}
+
+  :Field Type: {Field Type}
+
+  :Units: {Units}
+
+  :Source: {Source}
+
+  :Logic: {Logic}
+
+
+{loop_end}
