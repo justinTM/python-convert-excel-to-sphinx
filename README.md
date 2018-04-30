@@ -25,7 +25,7 @@ Example snippet from `example_sheet1_template.txt` file:
   In the above snippet, `{Data Tag}` is an example column header in the Excel sheet "test_worksheet.xlsx", as are `{Field Type}
 `, `{Units}`. `{Source}`, and `{}`. The python script will look for any tags matching a column header (inside brackets { } ) and substitute the actual cell contents.
 
-  ### {loop_start} and {loop_end}
+  ### Loop tags
   To populate ALL rows from the Excel sheet into the template file, a loop is specified by the tags `{loop_start}` and `{loop_end}`. The script will duplicate the lines between these two tags -- one duplicate for each row in a sheet. Then, row-by-row, the script will replace tags matching each column header with actual cell values.
 
 ## Functions
