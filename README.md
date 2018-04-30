@@ -1,6 +1,31 @@
 # python-convert-excel-to-sphinx
 A python script to convert Excel files into reStructuredText-formatted documentation  
 
+## Template files
+In order to extract data from an Excel sheet and create a reST-formatted document, template files are used. Inside these template files will be a mixture of reST-formatted text and tags used by the python script to populate the template (eg. `{loop_start}`.
+
+Example snippet from `example_sheet1_template.txt` file:
+```
+{loop_start}
+
+{Data Tag}
+------------------------------------------------------------
+{Description}
+  :Field Type: {Field Type}
+  :Units: {Units}
+  :Source: {Source}
+  :Logic: {Logic}
+
+{loop_end}
+```
+
+  ### Column header tags
+  In the above snippet, `{Data Tag}` is an example column header in the Excel sheet "test_worksheet.xlsx", as are `{Field Type}
+`, `{Units}`. `{Source}`, and `{}`. The python script will look for any tags matching a column header (inside brackets { } ) and substitute the actual cell contents.
+
+  ### {loop_start} and {loop_end}
+  To populate ALL rows from the Excel sheet into the template file, a loop is specified by the tags `{loop_start}` and `{loop_end}`. The script will duplicate the lines between these two tags -- one duplicate for each row in a sheet. Then, row-by-row, the script will replace tags matching each column header with actual cell values.
+
 ## Functions
 These are the functions found inside populate_templates_from_sheets.py
 
