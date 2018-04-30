@@ -1,6 +1,8 @@
 # python-convert-excel-to-sphinx
 A python script to convert Excel files into reStructuredText-formatted documentation  
 
+![Screenshot: convert Excel workbook to Sphinx / reST documentation](https://github.com/justinTM/python-convert-excel-to-sphinx/raw/master/excel_to_sphinx_screenshot.png)
+
 ## Template files
 In order to extract data from an Excel sheet and create a reST-formatted document, template files are used. Inside these template files will be a mixture of reST-formatted text and tags used by the python script to populate the template (eg. `{loop_start}`.
 
