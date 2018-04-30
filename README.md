@@ -1,5 +1,8 @@
 # python-convert-excel-to-sphinx
-A python script to convert Excel files into reStructuredText-formatted documentation  
+A python script to convert Excel files into Sphinx [reStructuredText](http://docutils.sourceforge.net/rst.html)-formatted documentation.
+
+* Uses [`xlrd`](http://xlrd.readthedocs.io/en/latest/) python module to read Excel files.  
+* Uses [Sphinx](http://www.sphinx-doc.org/en/master/index.html) to convert reST files into a full website. 
 
 ![Screenshot: convert Excel workbook to Sphinx / reST documentation](https://github.com/justinTM/python-convert-excel-to-sphinx/raw/master/excel_to_sphinx_screenshot.png)
 
