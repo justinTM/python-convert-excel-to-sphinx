@@ -1,10 +1,10 @@
 # python-convert-excel-to-sphinx
 A python script to convert Excel files into reStructuredText-formatted documentation  
   
-### populate_sphinx_template(cell_values, template_filename, output_filename)
+* ### populate_sphinx_template(cell_values, template_filename, output_filename)
 Replaces data tags (eg. "{Description}") in template file with Excel values
 
-### get_indent_of_string(string, string_to_find)
+* ### get_indent_of_string(string, string_to_find)
 Returns a string representing the indent of a string found within a string
 
 ### get_string_between_strings(s, s_begin, s_end)
